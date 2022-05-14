@@ -37,7 +37,8 @@ export async function getStaticProps() {
       categories: categoriesRes.data,
       homepage: homepageRes.data,
     },
-    revalidate: 1,
+    //cache chamadas de conteudo
+    revalidate: 30,
   };
 }
 

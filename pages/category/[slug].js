@@ -52,7 +52,8 @@ export async function getStaticProps({ params }) {
       category: matchingCategories.data[0],
       categories: allCategories,
     },
-    revalidate: 1,
+    //cache chamadas de conteudo
+    revalidate: 30,
   };
 }
 
